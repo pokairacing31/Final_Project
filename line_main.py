@@ -19,8 +19,8 @@ from line_show_house import house_show
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('PVhXkRB7hY5R470z02FQFSfUw//UPXQTcunQgGIkWyWSC2H6cYuea+Za982gv+2Y80+ygDI0U9Js73vuKWSOlxYuToAqH9n/UYjWmciA2OA1LrLKQh5Ya9kCPZqJHEOrEzenVAbC6CscBTGOwehGpQdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('269a7c0ab431de6b327b6ffca0d51f75')
+line_bot_api = LineBotApi('your access token')
+handler = WebhookHandler('your channel secret')
 
 
 @app.route("/callback", methods=['POST'])
